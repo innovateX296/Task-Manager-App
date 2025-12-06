@@ -1,0 +1,9 @@
+task-manager/
+│
+├─ server.js          # Backend (Node + Express)
+├─ package.json       # npm config (auto-created)
+│
+└─ public/            # Frontend files (served by Express)
+   ├─ index.html
+   ├─ style.css
+   └─ script.js

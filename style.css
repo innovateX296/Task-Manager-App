@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f4f5fb;
+  padding: 20px;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.form-group {
+  margin-bottom: 12px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+input[type="text"],
+textarea,
+select {
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.btn {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn.primary {
+  background: #4a6cf7;
+  color: white;
+}
+
+.btn.secondary {
+  background: #e0e3ff;
+  color: #32408f;
+}
+
+.btn.danger {
+  background: #ff4c4c;
+  color: white;
+}
+
+.btn + .btn {
+  margin-left: 6px;
+}
+
+.filter-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+#taskList {
+  list-style: none;
+}
+
+.task-item {
+  border: 1px solid #e1e1e1;
+  border-radius: 6px;
+  padding: 12px;
+  margin-bottom: 10px;
+  background: #fafbff;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.task-main {
+  max-width: 70%;
+}
+
+.task-title {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.task-desc {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 4px;
+}
+
+.task-meta {
+  font-size: 12px;
+  color: #888;
+}
+
+.task-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+}
+
+.task-status {
+  font-size: 13px;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.status-pending {
+  background: #fff5cc;
+  color: #b38200;
+}
+
+.status-in-progress {
+  background: #dff0ff;
+  color: #005b99;
+}
+
+.status-done {
+  background: #ddf7e4;
+  color: #187d3b;
+}

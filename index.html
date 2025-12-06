@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Task Manager App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Task Manager</h1>
+
+    <!-- Task Form -->
+    <section class="card">
+      <h2>Add New Task</h2>
+      <form id="taskForm">
+        <div class="form-group">
+          <label for="title">Title *</label>
+          <input type="text" id="title" placeholder="Enter task title" required />
+        </div>
+
+        <div class="form-group">
+          <label for="description">Description</label>
+          <textarea id="description" placeholder="Enter task description"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="status">Status *</label>
+          <select id="status" required>
+            <option value="Pending">Pending</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Done">Done</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn primary">Add Task</button>
+      </form>
+    </section>
+
+    <!-- Filter -->
+    <section class="card">
+      <h2>Tasks</h2>
+      <div class="filter-row">
+        <label for="filterStatus">Filter by status:</label>
+        <select id="filterStatus">
+          <option value="All">All</option>
+          <option value="Pending">Pending</option>
+          <option value="In Progress">In Progress</option>
+          <option value="Done">Done</option>
+        </select>
+      </div>
+
+      <!-- Task List -->
+      <ul id="taskList"></ul>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
